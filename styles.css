@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: rgb(179, 170, 153);
+    --nav-bg: #176d50;
+    --text: #222;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-size: 16px;
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    background-color: var(--nav-bg);
+    height: 50px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin: 1rem;
+    color: var(--body-bg);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    color: var(--text);
+}
+
+nav a.active {
+    background-color: var(--body-bg);
+    height: 100%;
+    padding: 0 0.5rem;
+    color: var(--text);
+}
+
+#container {
+    width: min(92vw, 800px);
+    margin-top: 3rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+#container h1,
+#container h3 {
+    text-align: center;
+}
+
+#container h3:last-of-type {
+    margin-top: 2rem;
+}
+
+#container ol {
+    margin-top: 1rem;
+    line-height: 145%;
+    text-decoration: none;
+    text-align: justify;
+}
+
+#container img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+#container p {
+    margin-top: 1rem;
+    line-height: 145%;
+    text-align: justify;
+}
